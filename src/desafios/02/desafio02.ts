@@ -21,3 +21,41 @@ let pessoa4 = {
     idade = 19,
     profissao = "padeiro"
 }*/
+
+
+/// SOLUÇÃO DO DESAFIO 02 ///
+
+enum Profissoes {
+    Atriz,
+    Padeiro
+}
+
+type Pessoas = {
+    nome: string,
+    idade: number,
+    profissao: Profissoes
+}
+
+let pessoa1: Pessoas = {
+    nome: 'maria',
+    idade: 29,
+    profissao: Profissoes.Atriz
+};
+
+let pessoa2: Pessoas = {
+    nome: 'roberto',
+    idade: 19,
+    profissao: Profissoes.Padeiro
+};
+
+let pessoa3: Pessoas = {
+    nome: 'laura',
+    idade: 32,
+    profissao: Profissoes.Atriz
+};
+
+let pessoa4: Pessoas = {
+    nome: "carlos",
+    idade: 19,
+    profissao: Profissoes.Padeiro
+}

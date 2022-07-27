@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="src/app.js" defer></script>
+    <script src="src/desafios/04/desafio04.js" defer></script>
 </head>
+
 <body>
     <input id="input1">
     <input id="input2">
     <button id="button">Clique aqui</button>
+
+    <div style=" margin-top: 100px; text-align: center;">
+        <h1>DESAFIO 04</h1>
+    </div>
+    <div id="login-container" style="display: flex;">
+        <div
+            style="display: flex; width: 300px; height: 100px; justify-content: space-between; flex-direction: column;">
+            <input id="login" placeholder="Login" onchange="preencherLogin(event)">
+            <input id="senha" placeholder="Senha" type="password" onchange="preencherSenha(event)">
+            <input id="api-key" placeholder="Api Key" onchange="preencherApi()">
+            <button id="login-button" disabled>Login</button>
+        </div>
+        <div id="search-container" style="margin-left: 20px">
+            <input id="search" placeholder="Nome do filme">
+            <button id="search-button">Pesquisar Filme</button>
+        </div>
+    </div>
+    <div class="list-movies-container" style=" margin-top: 100px;">
+        <h2>Lista de filmes</h2>
+        <label for="list-id-movie">Adicionar filme na lista</label>
+        <input id="list-id-movie" type="number" placeholder="Id do filme">
+        <button id="add-list">Adicionar</button>
+        <ul id="list-movie-user"></ul>
+    </div>
+
 </body>
+
 </html>
